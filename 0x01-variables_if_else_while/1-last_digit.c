@@ -26,7 +26,7 @@ int main(void)
 	}
 	else if (lastDig == 0)
 	{
-		printf("Last digit of %d id %d and is 0\n", n, lastDig);
+		printf("Last digit of %d is %d and is 0\n", n, lastDig);
 	}
 	else if (lastDig != 0 && lastDig < 6)
 	{
