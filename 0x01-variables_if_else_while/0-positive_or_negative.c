@@ -1,9 +1,13 @@
 #include <stdlib.h>
-
+#include <stdio.h>
 #include <time.h>
-/*
- * main - entry point to our program
- * Return: always zero (0)
+
+/**
+ * main - Entry point to our program
+ *
+ * Description: A program that checks if it is zero, positive or negative
+ *
+ * Return: Always 0
  */
 int main(void)
 {
