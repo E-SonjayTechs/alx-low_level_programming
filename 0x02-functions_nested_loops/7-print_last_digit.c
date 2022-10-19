@@ -6,9 +6,11 @@
  */
 int print_last_digit(int n)
 {
+	int lastDigi;
+
 	int lastDigi = n % 10;
 
-	if (lastDigin < 0)
+	if (lastDigi < 0)
 	{
 		lastDigi *= -1;
 	}
