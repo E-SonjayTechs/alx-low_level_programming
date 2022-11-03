@@ -26,16 +26,13 @@ int is_prime_number(int n)
  */
 int prime_num(unsigned int n, unsigned int a)
 {
+	a = 2;
 	if (n % a == 0)
 	{
-		if (n == a)
-		{
-			return (1);
-		}
-		else
-		{
-			return (0);
-		}
+		return (0);
+	}
+	if (a * a > n)
+	{
 		return (0 + prime_num(n, a + 1));
 	}
 }
