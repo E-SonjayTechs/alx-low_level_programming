@@ -8,24 +8,34 @@
  */
 int is_prime_number(int n)
 {
-	int a = n / 2;
-
 	if (n == 0 || n < 0 || n == 1)
 	{
 		return (0);
 	}
 	else
 	{
-		for (int i = 2; i <= a; i++)
+		return (prime_num(n, 2));
+	}
+}
+
+/**
+ * prime_num - checks if a number is prime or not
+ * @n: input
+ * @a: iterator
+ * Return: 1 - if prime, 0- if not
+ */
+int prime_num(unsigned int n, unsigned int a)
+{
+	if (n % a == 0)
+	{
+		if (n == a)
 		{
-			if (n % i == 0)
-			{
-				return (0);
-			}
-			else
-			{
-				return (1);
-			}
+			return (1);
 		}
+		else
+		{
+			return (0);
+		}
+		return (0 + prime_num(n, a + 1));
 	}
 }
