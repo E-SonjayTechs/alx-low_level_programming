@@ -3,6 +3,8 @@
 
 /**
  * main - entry point to the program
+ * @argc: argument counter
+ * @argv: argument vector array and pointer
  * Return: always 0
  */
 int main(int argc, char *argv[])
