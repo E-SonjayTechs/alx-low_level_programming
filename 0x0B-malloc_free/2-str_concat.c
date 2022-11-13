@@ -40,7 +40,7 @@ char *str_concat(char *s1, char *s2)
 		stroutput[k] = s1[k];
 	}
 	boundary = j;
-	for (j = 0; j < = boundary; k++, j++)
+	for (j = 0; j <= boundary; k++, j++)
 	{
 		stroutput[k] = s2[j];
 	}
